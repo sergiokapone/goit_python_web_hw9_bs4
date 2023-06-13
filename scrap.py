@@ -13,7 +13,11 @@ async def fetch_html(session, url):
 async def parse_author(session, author_url):
     author_info_html = await fetch_html(session, author_url)
     author_info_soup = BeautifulSoup(author_info_html, "lxml")
-    author_fullname = author_info_soup.select_one(".author-title").get_text(strip=True).replace("-", " ")
+    author_fullname = (
+        author_info_soup.select_one(".author-title")
+        .get_text(strip=True)
+        .replace("-", " ")
+    )
     born_date = author_info_soup.select_one(".author-born-date").get_text(strip=True)
     born_location = author_info_soup.select_one(".author-born-location").get_text(
         strip=True
@@ -85,8 +89,8 @@ async def main(num_pages):
 
     async with aiohttp.ClientSession() as session:
 
-        for page in range(1, num_pages + 1):
-
+        page = 1
+        while True:
             page_url = f"/page/{page}"
             url = base_url + page_url
 
@@ -98,9 +102,10 @@ async def main(num_pages):
 
             # перевірка на існування сторінок
             response = await fetch_html(session, url)
-            soup = BeautifulSoup(response, 'lxml')
-            if not len(soup.select('.next')):
+            soup = BeautifulSoup(response, "lxml")
+            if not len(soup.select(".next")):
                 break
+            page += 1
 
         authors = []
         for author_link in all_authors:
