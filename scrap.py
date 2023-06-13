@@ -4,6 +4,8 @@ import re
 import aiohttp
 from bs4 import BeautifulSoup
 
+from logger.project_logger import logger
+
 
 async def fetch_html(session, url):
     async with session.get(url) as response:
@@ -94,6 +96,8 @@ async def main(num_pages):
             page_url = f"/page/{page}"
             url = base_url + page_url
 
+            logger.info(f"Scraping quotes from: {url}")
+
             quotes, author_links = await get_quotes(session, url)
             all_quotes.extend(quotes)
 
@@ -118,4 +122,8 @@ async def main(num_pages):
 
 
 if __name__ == "__main__":
+    logger.info("Starting the web scraping process...")
+
     asyncio.run(main(10))
+
+    logger.info("Web scraping process completed.")

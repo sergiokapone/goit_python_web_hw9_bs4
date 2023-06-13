@@ -9,6 +9,8 @@ requests = "*"
 beautifulsoup4 = "*"
 aiohttp = "*"
 mongoengine = "*"
+coloring = "*"
+colorlog = "*"
 
 [dev-packages]
 
