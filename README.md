@@ -1,4 +1,4 @@
-# Домашнє завдання #9
+# Домашнє завдання #9 (частина перша)
 
 Виконується скрапінг[^1] сайту http://quotes.toscrape.com за допомогою бібліотеки [`Beautiful Soup`](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
