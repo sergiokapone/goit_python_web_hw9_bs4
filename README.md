@@ -1,4 +1,4 @@
-![BeautifulSoupLogo](https://sixfeetup.com/blog/an-introduction-to-beautifulsoup/@@images/27e8bf2a-5469-407e-b84d-5cf53b1b0bb6.png)
+![BeautifulSoupLogo](https://miro.medium.com/v2/resize:fit:1400/1*tecoiavyUYc6GKveN7wQYg.png)
 
 # Домашнє завдання #9 (Основне завдання)
 
