@@ -1,4 +1,4 @@
-![BeautifulSoupLogo](https://miro.medium.com/v2/resize:fit:1400/1*tecoiavyUYc6GKveN7wQYg.png)
+<p align="center"> <img src="https://miro.medium.com/v2/resize:fit:1400/1*tecoiavyUYc6GKveN7wQYg.png" alt="BeautifulSoupLogo" /> </p>
 
 # Домашнє завдання #9 (Основне завдання)
 
