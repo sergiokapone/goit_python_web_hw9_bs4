@@ -1,4 +1,6 @@
-# Домашнє завдання #9 (частина перша)
+![BeautifulSoupLogo](https://sixfeetup.com/blog/an-introduction-to-beautifulsoup/@@images/27e8bf2a-5469-407e-b84d-5cf53b1b0bb6.png)
+
+# Домашнє завдання #9 (Основне завдання)
 
 Виконується скрапінг[^1] сайту http://quotes.toscrape.com за допомогою бібліотеки [`Beautiful Soup`](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
